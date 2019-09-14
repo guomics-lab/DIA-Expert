@@ -1,11 +1,15 @@
 # DIA-Expert
 
 We currently recommend using Python 2.7 from http://www.python.org
+
 Guomics lab:http://www.guomics.com
 
+
 # Testing
+
 Input files:
-test data could be download at 
+
+test data could be download at http://202.96.122.210:8000/share.cgi?ssid=0WcbUcT#0WcbUcT
 
 1. SWATH/DIA mappingfile: eg, wlym113.txt 
 2. SWATH/DIA mzXML file: wlym5.mzXML.gz: the format of the file is sampleN.mzXML.gz，sampleN refers to the second column of the mapping file;
@@ -31,7 +35,9 @@ test data could be download at
 12.	generate_tic.py --map_file wlym113.txt --file_dir ./ --out 12_generate_tic/normalization3.tic
 13.	dia_expert.py --chrom_file com_chrom_wlym5_part1.txt --map_file wlym113.txt --tic_file 12_generate_tic/normalization3.tic
 
+
 # docker version (optional)
+
 1. docker login  # login the account on http://cloud.docker.com
 2. docker pull xihuswath/xihu_swath  # pull the image
 3. mkdir swath_data
